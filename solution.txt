@@ -1,0 +1,32 @@
+Task 1: Speech-to-Text transcription
+Download the audio file provided in the prompt.
+Use an Automatic Speech Recognition (ASR) tool to transcribe the audio file into text. This can be done using open-source tools like Wav2Vec or free-tier services from providers like Azure, GCP, AWS, etc.
+Save the transcription output to a text file for further processing.
+"Hello, this is Tom. I'm calling from the marketing department. We're conducting a survey and I was wondering if you would be willing to answer a few questions. Great, thank you. How often do you purchase products online? Would you say once a week, once a month, or less frequently? Okay, and what kind of products do you usually buy online? That's interesting. And finally, how satisfied are you with the online shopping experience? Would you say very satisfied, somewhat satisfied, or not satisfied at all? Okay, thank you for your time. We really appreciate your feedback."
+Task 2: Train an NLU model to classify intents and recognize entities
+
+Define the intents and entities that need to be classified based on the requirements of the task.
+Collect training data for the model. This can be done manually by creating example sentences for each intent and entity and labeling them, or by using pre-labeled datasets if available.
+Train a Natural Language Understanding (NLU) model using machine learning techniques like supervised learning or deep learning.
+Evaluate the trained model on a test dataset and fine-tune the model if needed.
+Save the trained model for future use.
+Task 3: Apply the NLU model to the transcription output
+
+Load the transcription output from Task 1.
+Split the transcription output into sentences.
+Load the NLU model trained in Task 2.
+For each sentence, apply the NLU model to classify the intent and recognize the entities present in it.
+Save the output to a JSON file as per the format given in the prompt.
+Task 4: Generate a summary report for the text
+Load the transcription output from Task 1.
+Clean the text by converting to lowercase, removing newlines and carriage returns, etc.
+Tokenize the text into sentences and words.
+Count the frequency of each word in the text.
+Calculate sentence scores based on the sum of word frequencies in each sentence.
+Select the top n sentences with the highest scores.
+Concatenate the selected sentences to generate the summary report.
+API used for speech-to-text transcription:
+For this task, one can use the Speech-to-Text API provided by various cloud service providers like Google Cloud Platform, Amazon Web Services, and Microsoft Azure. There are also open-source tools like Wav2Vec that can be used for speech-to-text transcription.
+
+NLU model used for intent and entity classification:
+For this task, one can use machine learning frameworks like TensorFlow or PyTorch to train an NLU model for intent and entity classification. There are also pre-trained models available like spaCy or Rasa that can be fine-tuned for this specific task.
